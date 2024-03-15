@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="EmersonmtxModelStoreContainer" CdmEntityContainer="EmersonmtxEntities">
+    <EntitySetMapping Name="tblFilmes">
+      <EntityTypeMapping TypeName="EmersonmtxModel.tblFilmes">
+        <MappingFragment StoreEntitySet="tblFilmes">
+          <ScalarProperty Name="cod_filme" ColumnName="cod_filme" />
+          <ScalarProperty Name="titulo_filme" ColumnName="titulo_filme" />
+          <ScalarProperty Name="lancamento" ColumnName="lancamento" />
+          <ScalarProperty Name="genero" ColumnName="genero" />
+          <ScalarProperty Name="produtora" ColumnName="produtora" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

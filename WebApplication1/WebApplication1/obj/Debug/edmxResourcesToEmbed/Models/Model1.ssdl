@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="EmersonmtxModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblFilmes">
+    <Key>
+      <PropertyRef Name="cod_filme" />
+    </Key>
+    <Property Name="cod_filme" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="titulo_filme" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="lancamento" Type="date" />
+    <Property Name="genero" Type="varchar" MaxLength="50" />
+    <Property Name="produtora" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="EmersonmtxModelStoreContainer">
+    <EntitySet Name="tblFilmes" EntityType="Self.tblFilmes" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
